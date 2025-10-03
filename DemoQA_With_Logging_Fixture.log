@@ -1,0 +1,231 @@
+2025-10-03 09:42:27,685 - INFO - selected browser is firefox - conftest
+2025-10-03 09:42:50,050 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:50,050 - INFO - Scenario: Click on "Text Box" menu - conftest
+2025-10-03 09:42:51,617 - INFO - When I click on "Text Box" menu - test_elements
+2025-10-03 09:42:51,620 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:42:51,620 - INFO - Then I should navigate to "Text Box" Page
+ - test_elements
+2025-10-03 09:42:51,624 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:51,626 - INFO - Scenario: Click on "Check Box" menu - conftest
+2025-10-03 09:42:51,709 - INFO - When I click on "Check Box" menu - test_elements
+2025-10-03 09:42:51,712 - INFO - Expected URL: https://demoqa.com/checkbox is in the actual url: https://demoqa.com/checkbox - utils
+2025-10-03 09:42:51,712 - INFO - Then I should navigate to "Check Box" Page
+ - test_elements
+2025-10-03 09:42:51,725 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:51,725 - INFO - Scenario: Click on "Radio Button" menu - conftest
+2025-10-03 09:42:51,824 - INFO - When I click on "Radio Button" menu - test_elements
+2025-10-03 09:42:51,824 - INFO - Expected URL: https://demoqa.com/radio-button is in the actual url: https://demoqa.com/radio-button - utils
+2025-10-03 09:42:51,826 - INFO - Then I should navigate to "Radio Button" Page
+ - test_elements
+2025-10-03 09:42:51,828 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:51,828 - INFO - Scenario: Click on "Web Tables" menu - conftest
+2025-10-03 09:42:51,908 - INFO - When I click on "Web Tables" menu - test_elements
+2025-10-03 09:42:51,915 - INFO - Expected URL: https://demoqa.com/webtables is in the actual url: https://demoqa.com/webtables - utils
+2025-10-03 09:42:51,915 - INFO - Then I should navigate to "Web Tables" Page
+ - test_elements
+2025-10-03 09:42:51,919 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:51,921 - INFO - Scenario: Click on "Buttons" menu - conftest
+2025-10-03 09:42:52,019 - INFO - When I click on "Buttons" menu - test_elements
+2025-10-03 09:42:52,019 - INFO - Expected URL: https://demoqa.com/buttons is in the actual url: https://demoqa.com/buttons - utils
+2025-10-03 09:42:52,019 - INFO - Then I should navigate to "Buttons" Page
+ - test_elements
+2025-10-03 09:42:52,024 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:52,024 - INFO - Scenario: Click on "Links" menu - conftest
+2025-10-03 09:42:52,101 - INFO - When I click on "Links" menu - test_elements
+2025-10-03 09:42:52,104 - INFO - Expected URL: https://demoqa.com/links is in the actual url: https://demoqa.com/links - utils
+2025-10-03 09:42:52,104 - INFO - Then I should navigate to "Links" Page
+ - test_elements
+2025-10-03 09:42:52,104 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:52,104 - INFO - Scenario: Click on "Broken Links - Images" menu - conftest
+2025-10-03 09:42:52,177 - INFO - When I click on "Broken Links - Images" menu - test_elements
+2025-10-03 09:42:52,178 - INFO - Expected URL: https://demoqa.com/broken is in the actual url: https://demoqa.com/broken - utils
+2025-10-03 09:42:52,179 - INFO - Then I should navigate to "Broken Links - Images" Page
+ - test_elements
+2025-10-03 09:42:52,183 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:52,183 - INFO - Scenario: Click on "Upload and Download" menu - conftest
+2025-10-03 09:42:52,261 - INFO - When I click on "Upload and Download" menu - test_elements
+2025-10-03 09:42:52,264 - INFO - Expected URL: https://demoqa.com/upload-download is in the actual url: https://demoqa.com/upload-download - utils
+2025-10-03 09:42:52,264 - INFO - Then I should navigate to "Upload and Download" Page
+ - test_elements
+2025-10-03 09:42:52,267 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:42:52,267 - INFO - Scenario: Click on "Dynamic Properties" menu - conftest
+2025-10-03 09:42:52,343 - INFO - When I click on "Dynamic Properties" menu - test_elements
+2025-10-03 09:42:52,349 - INFO - Expected URL: https://demoqa.com/dynamic-properties is in the actual url: https://demoqa.com/dynamic-properties - utils
+2025-10-03 09:42:52,349 - INFO - Then I should navigate to "Dynamic Properties" Page
+ - test_elements
+2025-10-03 09:42:52,352 - INFO - Feature: Text Box Page Functionality - conftest
+2025-10-03 09:42:52,352 - INFO - Scenario: Enter the user details - conftest
+2025-10-03 09:42:53,409 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:42:53,409 - INFO - Given I am on "Text Box" Page - test_textbox
+2025-10-03 09:42:53,506 - INFO - When I enter a value "John Doe" in the Full Name field - test_textbox
+2025-10-03 09:42:53,551 - INFO - When I enter a value "John.Doe@gmail.com" in the E-mail field - test_textbox
+2025-10-03 09:42:53,625 - INFO - When I enter a value "123 Main St, Redmond, USA" in the Current Address field - test_textbox
+2025-10-03 09:42:53,794 - INFO - When I enter a value "321 Main St, Redmond, USA" in the Permanent Address field - test_textbox
+2025-10-03 09:42:53,917 - INFO - When I click on Submit button - test_textbox
+2025-10-03 09:42:53,936 - INFO - Then I should see the success information
+ - test_textbox
+2025-10-03 09:42:53,939 - INFO - Feature: Text Box Page Functionality - conftest
+2025-10-03 09:42:53,939 - INFO - Scenario: Enter the user details - conftest
+2025-10-03 09:42:54,909 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:42:54,909 - INFO - Given I am on "Text Box" Page - test_textbox
+2025-10-03 09:42:54,995 - INFO - When I enter a value "Jane Doe" in the Full Name field - test_textbox
+2025-10-03 09:42:55,052 - INFO - When I enter a value "Jane.Doe@gmail.com" in the E-mail field - test_textbox
+2025-10-03 09:42:55,085 - INFO - When I enter a value "456 Elm St, Bellevue, USA" in the Current Address field - test_textbox
+2025-10-03 09:42:55,123 - INFO - When I enter a value "654 Elm St, Bellevue, USA" in the Permanent Address field - test_textbox
+2025-10-03 09:42:55,229 - INFO - When I click on Submit button - test_textbox
+2025-10-03 09:42:55,241 - INFO - Then I should see the success information
+ - test_textbox
+2025-10-03 09:43:15,343 - INFO - selected browser is edge - conftest
+2025-10-03 09:43:23,212 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:23,212 - INFO - Scenario: Click on "Text Box" menu - conftest
+2025-10-03 09:43:24,264 - INFO - When I click on "Text Box" menu - test_elements
+2025-10-03 09:43:24,274 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:43:24,275 - INFO - Then I should navigate to "Text Box" Page
+ - test_elements
+2025-10-03 09:43:24,279 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:24,279 - INFO - Scenario: Click on "Check Box" menu - conftest
+2025-10-03 09:43:24,409 - INFO - When I click on "Check Box" menu - test_elements
+2025-10-03 09:43:24,433 - INFO - Expected URL: https://demoqa.com/checkbox is in the actual url: https://demoqa.com/checkbox - utils
+2025-10-03 09:43:24,433 - INFO - Then I should navigate to "Check Box" Page
+ - test_elements
+2025-10-03 09:43:24,437 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:24,437 - INFO - Scenario: Click on "Radio Button" menu - conftest
+2025-10-03 09:43:24,538 - INFO - When I click on "Radio Button" menu - test_elements
+2025-10-03 09:43:24,555 - INFO - Expected URL: https://demoqa.com/radio-button is in the actual url: https://demoqa.com/radio-button - utils
+2025-10-03 09:43:24,555 - INFO - Then I should navigate to "Radio Button" Page
+ - test_elements
+2025-10-03 09:43:24,558 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:24,558 - INFO - Scenario: Click on "Web Tables" menu - conftest
+2025-10-03 09:43:24,785 - INFO - When I click on "Web Tables" menu - test_elements
+2025-10-03 09:43:24,793 - INFO - Expected URL: https://demoqa.com/webtables is in the actual url: https://demoqa.com/webtables - utils
+2025-10-03 09:43:24,793 - INFO - Then I should navigate to "Web Tables" Page
+ - test_elements
+2025-10-03 09:43:24,805 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:24,806 - INFO - Scenario: Click on "Buttons" menu - conftest
+2025-10-03 09:43:24,922 - INFO - When I click on "Buttons" menu - test_elements
+2025-10-03 09:43:24,932 - INFO - Expected URL: https://demoqa.com/buttons is in the actual url: https://demoqa.com/buttons - utils
+2025-10-03 09:43:24,932 - INFO - Then I should navigate to "Buttons" Page
+ - test_elements
+2025-10-03 09:43:24,935 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:24,935 - INFO - Scenario: Click on "Links" menu - conftest
+2025-10-03 09:43:25,021 - INFO - When I click on "Links" menu - test_elements
+2025-10-03 09:43:25,091 - INFO - Expected URL: https://demoqa.com/links is in the actual url: https://demoqa.com/links - utils
+2025-10-03 09:43:25,091 - INFO - Then I should navigate to "Links" Page
+ - test_elements
+2025-10-03 09:43:25,093 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:25,094 - INFO - Scenario: Click on "Broken Links - Images" menu - conftest
+2025-10-03 09:43:25,210 - INFO - When I click on "Broken Links - Images" menu - test_elements
+2025-10-03 09:43:25,217 - INFO - Expected URL: https://demoqa.com/broken is in the actual url: https://demoqa.com/broken - utils
+2025-10-03 09:43:25,217 - INFO - Then I should navigate to "Broken Links - Images" Page
+ - test_elements
+2025-10-03 09:43:25,219 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:25,219 - INFO - Scenario: Click on "Upload and Download" menu - conftest
+2025-10-03 09:43:25,322 - INFO - When I click on "Upload and Download" menu - test_elements
+2025-10-03 09:43:25,333 - INFO - Expected URL: https://demoqa.com/upload-download is in the actual url: https://demoqa.com/upload-download - utils
+2025-10-03 09:43:25,333 - INFO - Then I should navigate to "Upload and Download" Page
+ - test_elements
+2025-10-03 09:43:25,335 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:25,336 - INFO - Scenario: Click on "Dynamic Properties" menu - conftest
+2025-10-03 09:43:25,468 - INFO - When I click on "Dynamic Properties" menu - test_elements
+2025-10-03 09:43:25,475 - INFO - Expected URL: https://demoqa.com/dynamic-properties is in the actual url: https://demoqa.com/dynamic-properties - utils
+2025-10-03 09:43:25,475 - INFO - Then I should navigate to "Dynamic Properties" Page
+ - test_elements
+2025-10-03 09:43:25,477 - INFO - Feature: Text Box Page Functionality - conftest
+2025-10-03 09:43:25,478 - INFO - Scenario: Enter the user details - conftest
+2025-10-03 09:43:26,017 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:43:26,017 - INFO - Given I am on "Text Box" Page - test_textbox
+2025-10-03 09:43:26,152 - INFO - When I enter a value "John Doe" in the Full Name field - test_textbox
+2025-10-03 09:43:26,235 - INFO - When I enter a value "John.Doe@gmail.com" in the E-mail field - test_textbox
+2025-10-03 09:43:26,309 - INFO - When I enter a value "123 Main St, Redmond, USA" in the Current Address field - test_textbox
+2025-10-03 09:43:26,389 - INFO - When I enter a value "321 Main St, Redmond, USA" in the Permanent Address field - test_textbox
+2025-10-03 09:43:26,454 - INFO - When I click on Submit button - test_textbox
+2025-10-03 09:43:26,501 - INFO - Then I should see the success information
+ - test_textbox
+2025-10-03 09:43:26,501 - INFO - Feature: Text Box Page Functionality - conftest
+2025-10-03 09:43:26,501 - INFO - Scenario: Enter the user details - conftest
+2025-10-03 09:43:26,999 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:43:26,999 - INFO - Given I am on "Text Box" Page - test_textbox
+2025-10-03 09:43:27,118 - INFO - When I enter a value "Jane Doe" in the Full Name field - test_textbox
+2025-10-03 09:43:27,182 - INFO - When I enter a value "Jane.Doe@gmail.com" in the E-mail field - test_textbox
+2025-10-03 09:43:27,248 - INFO - When I enter a value "456 Elm St, Bellevue, USA" in the Current Address field - test_textbox
+2025-10-03 09:43:27,388 - INFO - When I enter a value "654 Elm St, Bellevue, USA" in the Permanent Address field - test_textbox
+2025-10-03 09:43:27,448 - INFO - When I click on Submit button - test_textbox
+2025-10-03 09:43:27,554 - INFO - Then I should see the success information
+ - test_textbox
+2025-10-03 09:43:53,594 - INFO - selected browser is chrome - conftest
+2025-10-03 09:43:58,450 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:58,450 - INFO - Scenario: Click on "Text Box" menu - conftest
+2025-10-03 09:43:59,547 - INFO - When I click on "Text Box" menu - test_elements
+2025-10-03 09:43:59,556 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:43:59,556 - INFO - Then I should navigate to "Text Box" Page
+ - test_elements
+2025-10-03 09:43:59,564 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:43:59,566 - INFO - Scenario: Click on "Check Box" menu - conftest
+2025-10-03 09:44:00,619 - INFO - When I click on "Check Box" menu - test_elements
+2025-10-03 09:44:00,634 - INFO - Expected URL: https://demoqa.com/checkbox is in the actual url: https://demoqa.com/checkbox - utils
+2025-10-03 09:44:00,634 - INFO - Then I should navigate to "Check Box" Page
+ - test_elements
+2025-10-03 09:44:00,640 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:44:00,640 - INFO - Scenario: Click on "Radio Button" menu - conftest
+2025-10-03 09:44:01,102 - INFO - When I click on "Radio Button" menu - test_elements
+2025-10-03 09:44:01,109 - INFO - Expected URL: https://demoqa.com/radio-button is in the actual url: https://demoqa.com/radio-button - utils
+2025-10-03 09:44:01,109 - INFO - Then I should navigate to "Radio Button" Page
+ - test_elements
+2025-10-03 09:44:01,116 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:44:01,117 - INFO - Scenario: Click on "Web Tables" menu - conftest
+2025-10-03 09:44:01,334 - INFO - When I click on "Web Tables" menu - test_elements
+2025-10-03 09:44:01,852 - INFO - Expected URL: https://demoqa.com/webtables is in the actual url: https://demoqa.com/webtables - utils
+2025-10-03 09:44:01,852 - INFO - Then I should navigate to "Web Tables" Page
+ - test_elements
+2025-10-03 09:44:01,856 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:44:01,856 - INFO - Scenario: Click on "Buttons" menu - conftest
+2025-10-03 09:44:01,953 - INFO - When I click on "Buttons" menu - test_elements
+2025-10-03 09:44:01,960 - INFO - Expected URL: https://demoqa.com/buttons is in the actual url: https://demoqa.com/buttons - utils
+2025-10-03 09:44:01,960 - INFO - Then I should navigate to "Buttons" Page
+ - test_elements
+2025-10-03 09:44:01,963 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:44:01,963 - INFO - Scenario: Click on "Links" menu - conftest
+2025-10-03 09:44:02,053 - INFO - When I click on "Links" menu - test_elements
+2025-10-03 09:44:02,061 - INFO - Expected URL: https://demoqa.com/links is in the actual url: https://demoqa.com/links - utils
+2025-10-03 09:44:02,061 - INFO - Then I should navigate to "Links" Page
+ - test_elements
+2025-10-03 09:44:02,065 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:44:02,065 - INFO - Scenario: Click on "Broken Links - Images" menu - conftest
+2025-10-03 09:44:02,154 - INFO - When I click on "Broken Links - Images" menu - test_elements
+2025-10-03 09:44:02,159 - INFO - Expected URL: https://demoqa.com/broken is in the actual url: https://demoqa.com/broken - utils
+2025-10-03 09:44:02,159 - INFO - Then I should navigate to "Broken Links - Images" Page
+ - test_elements
+2025-10-03 09:44:02,162 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:44:02,162 - INFO - Scenario: Click on "Upload and Download" menu - conftest
+2025-10-03 09:44:02,233 - INFO - When I click on "Upload and Download" menu - test_elements
+2025-10-03 09:44:02,261 - INFO - Expected URL: https://demoqa.com/upload-download is in the actual url: https://demoqa.com/upload-download - utils
+2025-10-03 09:44:02,261 - INFO - Then I should navigate to "Upload and Download" Page
+ - test_elements
+2025-10-03 09:44:02,262 - INFO - Feature: Check Elements Page Functionality - conftest
+2025-10-03 09:44:02,262 - INFO - Scenario: Click on "Dynamic Properties" menu - conftest
+2025-10-03 09:44:02,331 - INFO - When I click on "Dynamic Properties" menu - test_elements
+2025-10-03 09:44:02,338 - INFO - Expected URL: https://demoqa.com/dynamic-properties is in the actual url: https://demoqa.com/dynamic-properties - utils
+2025-10-03 09:44:02,338 - INFO - Then I should navigate to "Dynamic Properties" Page
+ - test_elements
+2025-10-03 09:44:02,341 - INFO - Feature: Text Box Page Functionality - conftest
+2025-10-03 09:44:02,341 - INFO - Scenario: Enter the user details - conftest
+2025-10-03 09:44:02,861 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:44:02,861 - INFO - Given I am on "Text Box" Page - test_textbox
+2025-10-03 09:44:02,982 - INFO - When I enter a value "John Doe" in the Full Name field - test_textbox
+2025-10-03 09:44:03,070 - INFO - When I enter a value "John.Doe@gmail.com" in the E-mail field - test_textbox
+2025-10-03 09:44:03,166 - INFO - When I enter a value "123 Main St, Redmond, USA" in the Current Address field - test_textbox
+2025-10-03 09:44:03,302 - INFO - When I enter a value "321 Main St, Redmond, USA" in the Permanent Address field - test_textbox
+2025-10-03 09:44:03,436 - INFO - When I click on Submit button - test_textbox
+2025-10-03 09:44:03,455 - INFO - Then I should see the success information
+ - test_textbox
+2025-10-03 09:44:03,460 - INFO - Feature: Text Box Page Functionality - conftest
+2025-10-03 09:44:03,461 - INFO - Scenario: Enter the user details - conftest
+2025-10-03 09:44:03,964 - INFO - Expected URL: https://demoqa.com/text-box is in the actual url: https://demoqa.com/text-box - utils
+2025-10-03 09:44:03,964 - INFO - Given I am on "Text Box" Page - test_textbox
+2025-10-03 09:44:04,067 - INFO - When I enter a value "Jane Doe" in the Full Name field - test_textbox
+2025-10-03 09:44:04,169 - INFO - When I enter a value "Jane.Doe@gmail.com" in the E-mail field - test_textbox
+2025-10-03 09:44:04,262 - INFO - When I enter a value "456 Elm St, Bellevue, USA" in the Current Address field - test_textbox
+2025-10-03 09:44:04,425 - INFO - When I enter a value "654 Elm St, Bellevue, USA" in the Permanent Address field - test_textbox
+2025-10-03 09:44:04,498 - INFO - When I click on Submit button - test_textbox
+2025-10-03 09:44:04,520 - INFO - Then I should see the success information
+ - test_textbox
