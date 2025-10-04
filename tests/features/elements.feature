@@ -1,8 +1,5 @@
 Feature:Check Elements Page Functionality
 
-#  Background:
-#    Given I am on Elements page
-
   Scenario Outline: Click on "<menu_link>" menu
     When I click on "<menu_link>" menu
     Then I should navigate to "<menu_link>" Page
@@ -18,4 +15,3 @@ Feature:Check Elements Page Functionality
     | Broken Links - Images |
     | Upload and Download |
     | Dynamic Properties |
-

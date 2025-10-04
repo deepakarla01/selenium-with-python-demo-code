@@ -9,14 +9,13 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.edge.service import Service as EdgeService
-import pytest_html
 from utilities.utils import Utils
 from pytest_bdd import hooks
 
-@pytest.fixture(scope="session",autouse=True)
-def setup(request,browser,url,userid,password,download_path,env):
-    # driver = None
-    #launch browser
+
+@pytest.fixture(scope="session", autouse=True)
+def setup(request, browser, url, userid, password, download_path, env):
+    # launch browser
     if browser == "chrome":
         options = Options()
         # options.add_argument("--headless=new")  # Use new headless mode
@@ -27,32 +26,35 @@ def setup(request,browser,url,userid,password,download_path,env):
         options.add_argument("--window-size=1920,1080")
         options.add_argument("--disable-extensions")
         options.add_argument("--log-level=3")  # Suppress logs
-        options.add_experimental_option("excludeSwitches", ["enable-logging"])  # More suppression
+        options.add_experimental_option(
+            "excludeSwitches", ["enable-logging"]
+        )  # More suppression
 
         # Disable ads (experimental)
         prefs = {
             "profile.default_content_setting_values.ads": 2,  # block ads
             "profile.default_content_setting_values.popups": 2,
-            "profile.managed_default_content_settings.notifications": 2
+            "profile.managed_default_content_settings.notifications": 2,
         }
         options.add_experimental_option("prefs", prefs)
         service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service,options=options)
+        driver = webdriver.Chrome(service=service, options=options)
     elif browser == "firefox":
         options = FirefoxOptions()
         options.set_preference("dom.disable_open_during_load", True)  # block popups
-        options.set_preference("dom.webnotifications.enabled", False)  # disable notifications
+        options.set_preference(
+            "dom.webnotifications.enabled", False
+        )  # disable notifications
         options.set_preference("permissions.default.desktop-notification", 2)
         options.set_preference("dom.push.enabled", False)
         service = FirefoxService(GeckoDriverManager().install())
-        driver = webdriver.Firefox(service=service,options=options)
+        driver = webdriver.Firefox(service=service, options=options)
     elif browser == "edge":
         options = webdriver.EdgeOptions()
         options.use_chromium = True
         options.add_argument("--disable-popup-blocking")
         options.add_argument("--disable-notifications")
         options.add_argument("--disable-infobars")
-        # driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()), options=options)
         try:
             # Auto download latest EdgeDriver
             service = EdgeService(EdgeChromiumDriverManager().install())
@@ -78,15 +80,17 @@ def setup(request,browser,url,userid,password,download_path,env):
     yield driver
     driver.quit()
 
+
 def pytest_addoption(parser):
-    parser.addoption("--browser",action="store",default="chrome")
+    parser.addoption("--browser", action="store", default="chrome")
     parser.addoption("--url", action="store", default="https://demoqa.com/")
     parser.addoption("--env", action="store", default="prod")
     # Set a dynamic download path based on OS
     default_download_path = os.path.join(os.path.expanduser("~"), "Downloads")
     parser.addoption("--download_path", action="store", default=default_download_path)
-    parser.addoption("--userid", action="store",default=None)
-    parser.addoption("--password", action="store",default=None)
+    parser.addoption("--userid", action="store", default=None)
+    parser.addoption("--password", action="store", default=None)
+
 
 @pytest.fixture(scope="session")
 def browser(request):
@@ -95,27 +99,35 @@ def browser(request):
         log.info(f"selected browser is {selected_browser}")
         return selected_browser
 
+
 @pytest.fixture(scope="session")
 def url(request):
     return request.config.getoption("--url")
+
 
 @pytest.fixture(scope="session")
 def env(request):
     return request.config.getoption("--env")
 
+
 @pytest.fixture(scope="session")
 def download_path(request):
     return request.config.getoption("--download_path")
+
 
 @pytest.fixture(scope="session")
 def userid(request):
     return request.config.getoption("--userid")
 
+
 @pytest.fixture(scope="session")
 def password(request):
     return request.config.getoption("--password")
 
+
 log = Utils.custom_logger()  # Assuming Utils.custom_logger is defined
+
+
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item):
     pytest_html = item.config.pluginmanager.getplugin("html")
@@ -132,24 +144,34 @@ def pytest_runtest_makereport(item):
 
             # Sanitize filename
             import re
-            sanitized_name = re.sub(r'[^\w\-_\. ]', '_', report.nodeid.replace("::", "_"))
+
+            sanitized_name = re.sub(
+                r"[^\w\-_\. ]", "_", report.nodeid.replace("::", "_")
+            )
             file_name = f"{sanitized_name}.png"
             destinationFile = os.path.join(report_dir, file_name)
 
             try:
-                driver = item.config.driver  # Access session-scoped driver. Adjust this based on your driver setup
+                driver = (
+                    item.config.driver
+                )  # Access session-scoped driver. Adjust this based on your driver setup
                 if driver:
                     log.info(f"Saving screenshot to: {destinationFile}")
                     driver.save_screenshot(destinationFile)
                     log.info(f"Screenshot saved successfully at: {destinationFile}")
 
                     # Relative path for embedding
-                    relative_path = os.path.relpath(destinationFile, start=report_dir).replace("\\", "/")
-                    log.info(f"Embedding screenshot with relative path: {relative_path}\n")
+                    relative_path = os.path.relpath(
+                        destinationFile, start=report_dir
+                    ).replace("\\", "/")
+                    log.info(
+                        f"Embedding screenshot with relative path: {relative_path}\n"
+                    )
 
                     html = (
-                            '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" '
-                            'onclick="window.open(this.src)" align="right"/></div>' % relative_path
+                        '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" '
+                        'onclick="window.open(this.src)" align="right"/></div>'
+                        % relative_path
                     )
                     extras.append(pytest_html.extras.html(html))
                 else:
@@ -161,7 +183,8 @@ def pytest_runtest_makereport(item):
             captured_lines = item.funcargs["caplog"].records
             gherkin_keywords = ("Given", "When", "Then", "And", "But")
             gherkin_steps = [
-                record.message for record in captured_lines
+                record.message
+                for record in captured_lines
                 if record.message.strip().startswith(gherkin_keywords)
             ]
             if gherkin_steps:
@@ -170,11 +193,13 @@ def pytest_runtest_makereport(item):
 
     report.extras = extras
 
+
 def pytest_html_report_title(report):
     report.title = "Demo QA Automation Report"
 
+
 @pytest.hookimpl
 def pytest_bdd_before_scenario(request, feature, scenario):
-# Log the feature and scenario name before each scenario runs
+    # Log the feature and scenario name before each scenario runs
     log.info(f"Feature: {feature.name}")
     log.info(f"Scenario: {scenario.name}")

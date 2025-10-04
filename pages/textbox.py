@@ -2,14 +2,15 @@ from selenium.webdriver.common.by import By
 from base.base_driver import BaseDriver
 from utilities.utils import Utils
 
+
 class Textbox(BaseDriver):
-    def __init__(self,driver):
+    def __init__(self, driver):
         super().__init__(driver)
-        self.ut= Utils()
+        self.ut = Utils()
 
     log = Utils.custom_logger()
 
-    def go_to_textbox(self,url):
+    def go_to_textbox(self, url):
         expected_url = url + "text-box"
         self.driver.get(expected_url)
         if self.ut.check_expected_url(expected_url, self.driver.current_url):
@@ -58,7 +59,9 @@ class Textbox(BaseDriver):
         if perm_address.get_attribute("value") == permanent_address:
             return True
         else:
-            self.log.error("An unexpected error occurred in enter_permanent_address: {e}")
+            self.log.error(
+                "An unexpected error occurred in enter_permanent_address: {e}"
+            )
             return False
 
     def click_submit(self):

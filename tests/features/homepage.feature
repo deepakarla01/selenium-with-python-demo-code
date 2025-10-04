@@ -15,4 +15,3 @@ Feature: Homepage Functionality
     | Widgets |
     | Interactions |
     | Books |
-
