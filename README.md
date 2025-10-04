@@ -1,6 +1,6 @@
 # Selenium with Python Demo Code
 
-A collection of Python scripts demonstrating Selenium WebDriver functionalities with **BDD (Behavior Driven Development)** using `pytest-bdd`. 
+A collection of sample Python scripts demonstrating Selenium WebDriver functionalities with **BDD (Behavior Driven Development)** using `pytest-bdd`. 
 This repository showcases browser automation, test automation, and cross-browser testing following best practices like the **Page Object Model (POM)**.
 
 ## Project Structure
