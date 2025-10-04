@@ -4,16 +4,17 @@ A collection of Python scripts demonstrating Selenium WebDriver functionalities 
 This repository showcases browser automation, test automation, and cross-browser testing following best practices like the **Page Object Model (POM)**.
 
 ## Project Structure
-- **base/**: Contains base classes for WebDriver initialization and configurations.  
+- **base/**: Contains base classes for WebDriver initialization and configurations. ALso contains reusable methods that would need driver.
 - **pages/**: Implements Page Object Model for reusable and maintainable element locators and actions.  
 - **features/**: Contains `.feature` files written in **Gherkin syntax** for BDD scenarios.  
 - **step_definitions/**: Maps the steps in feature files to Python functions using `pytest-bdd`.  
-- **utilities/**: Utility functions for logging, waits, browser management, etc.  
-- **reports/**: Stores HTML or JSON reports generated from test runs.  
+- **utilities/**: Utility functions for logging, read data from csv, etc.  
+- **reports/**: Stores HTML report generated from test runs.
+- **conftest.py**: Contains pytest fixtures for WebDriver setup, browser selection, and test setup/teardown. 
 
 ## Prerequisites
 - Python 3.6+  
-- Install required packages:
+- Install required packages
 
 ## Execution
 pytest -vs --gherkin-terminal-reporter --capture=sys --browser edge --url https://demoqa.com/ --html=reports/demoqa_automation.html --self-contained-html
